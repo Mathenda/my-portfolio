@@ -1,6 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import def from "../../Assets/logo.png";
+import academicWriters from "../../Assets/writers.jpg";
+import quiz from "../../Assets/quiz.jpeg";
+import film from "../../Assets/film.png";
+import spotify from "../../Assets/spotify.png";
+import spotify2 from "../../Assets/spotify2.png";
+import notes from "../../Assets/notes.png";
 import ProjectInfo from "./ProjectInfo";
 function Projects(){
     return(
@@ -15,7 +21,7 @@ function Projects(){
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectInfo
-              imgPath={def}
+              imgPath={notes}
               isBlog={false}
               title="Social Notes"
               description="Networked notes app using AWS as a chrome extension / mobile app  react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
@@ -26,7 +32,7 @@ function Projects(){
 
           <Col md={4} className="project-card">
             <ProjectInfo
-              imgPath={def}
+              imgPath={spotify2}
               isBlog={false}
               title="SPOTIFY tinder"
               description="A Spotify application that uses Spotify’s web api to create an interface that allows user to like or dislike songs within daily mixes and radios using Tinder’s signature Left / Right motion. Spotify android/iOS app developed using ReactJS / Kotlin"
@@ -37,21 +43,22 @@ function Projects(){
 
           <Col md={4} className="project-card">
             <ProjectInfo
-              imgPath={def}
-              isBlog={false}
-              title="Lorem Ipsum"
-              description="Aut sapiente voluptatum qui quia quidem 33 eveniet eveniet 33 nulla amet sit quasi natus est pariatur dolorem non dolorem quod? Id quaerat necessitatibus est consequuntur odit qui magnam voluptatem qui rerum debitis aut deleniti galisum!"
-              ghLink="https://github.com/the1Don1"
-              demoLink="https://github.com/the1Don1"              
+              imgPath={academicWriters}
+              isBlog={true}
+              title="Academic Writers"
+              description="Digital Educational Resources & Research Capacity Building"
+              ghLink="https://academicwriters.org.za"
+
+              // demoLink="https://academicwriters.org.za"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectInfo
-              imgPath={def}
+              imgPath={quiz}
               isBlog={false}
-              title="Lorem Ipsum"
-              description="Aut sapiente voluptatum qui quia quidem 33 eveniet eveniet 33 nulla amet sit quasi natus est pariatur dolorem non dolorem quod? Id quaerat necessitatibus est consequuntur odit qui magnam voluptatem qui rerum debitis aut deleniti galisum!"
+              title="QuizUp"
+              description="An academic tool used to promote Active learning by providing a tool to generate questions and grade responses"
               ghLink="https://github.com/the1Don1"
               demoLink="https://github.com/the1Don1"
             />
@@ -59,10 +66,10 @@ function Projects(){
 
           <Col md={4} className="project-card">
             <ProjectInfo
-              imgPath={def}
+              imgPath={film}
               isBlog={false}
-              title="Lorem Ipsum"
-              description="Aut sapiente voluptatum qui quia quidem 33 eveniet eveniet 33 nulla amet sit quasi natus est pariatur dolorem non dolorem quod? Id quaerat necessitatibus est consequuntur odit qui magnam voluptatem qui rerum debitis aut deleniti galisum!"
+              title="Movie recommender"
+              description="Interactive web app that uses AI and machine learning to adjust based on your tastes and recommend movies you might enjoy"
               ghLink="https://github.com/the1Don1"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
@@ -70,10 +77,10 @@ function Projects(){
 
           <Col md={4} className="project-card">
             <ProjectInfo
-              imgPath={def}
+              imgPath={spotify}
               isBlog={false}
-              title="Lorem Ipsum"
-              description="Aut sapiente voluptatum qui quia quidem 33 eveniet eveniet 33 nulla amet sit quasi natus est pariatur dolorem non dolorem quod? Id quaerat necessitatibus est consequuntur odit qui magnam voluptatem qui rerum debitis aut deleniti galisum!"
+              title="Spotify similarity calculator"
+              description="Web app that uses the Spotify REST API to compare to spotify accounts and return a similarity score based on genre, playlist and listening patterns"
               ghLink="https://github.com/the1Don1"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
