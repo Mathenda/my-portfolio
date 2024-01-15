@@ -12,6 +12,7 @@
     "react-dom": "^18.2.0",
     "react-github-calendar": "^4.0.7",
     "react-github-calender": "^1.1.0",
+    "react-github-contribution-calendar": "^2.2.0",
     "react-icons": "^4.12.0",
     "react-pdf": "^7.5.1",
     "react-router-dom": "^6.20.1",
@@ -22,8 +23,8 @@
   "homepage": "https://The1Don1.github.io/my-portfolio/",
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
