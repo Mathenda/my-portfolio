@@ -44,9 +44,11 @@ function Projects(){
           <Col md={4} className="project-card">
             <ProjectInfo
               imgPath={academicWriters}
-              isBlog={true}
+              isBlog={false}
               title="Academic Writers"
-              description="Digital Educational Resources & Research Capacity Building"
+              description="Digital Educational Resources & Research Capacity Building. Academic Writers™ is an educational institute that provides digital educational resources to students, teachers, academics, researchers, and other relevant entities involved in scholarly work with the sole purpose of advancing digital literacy and research capacity building. 
+
+              "
               ghLink="https://academicwriters.org.za"
 
               // demoLink="https://academicwriters.org.za"              
