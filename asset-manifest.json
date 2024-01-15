@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.815d39cb.css",
-    "main.js": "/my-portfolio/static/js/main.e98fffd3.js",
+    "main.js": "/my-portfolio/static/js/main.9223217c.js",
     "static/js/787.2dcca737.chunk.js": "/my-portfolio/static/js/787.2dcca737.chunk.js",
     "static/media/home-bg.jpg": "/my-portfolio/static/media/home-bg.4ed47eb58cf9ebc5ef94.jpg",
     "static/media/Mathenda_Maphasha_-_CV[1].pdf": "/my-portfolio/static/media/Mathenda_Maphasha_-_CV[1].9c265b70066b9129c90c.pdf",
@@ -13,11 +13,11 @@
     "static/media/pre.svg": "/my-portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/my-portfolio/index.html",
     "main.815d39cb.css.map": "/my-portfolio/static/css/main.815d39cb.css.map",
-    "main.e98fffd3.js.map": "/my-portfolio/static/js/main.e98fffd3.js.map",
+    "main.9223217c.js.map": "/my-portfolio/static/js/main.9223217c.js.map",
     "787.2dcca737.chunk.js.map": "/my-portfolio/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.815d39cb.css",
-    "static/js/main.e98fffd3.js"
+    "static/js/main.9223217c.js"
   ]
 }
