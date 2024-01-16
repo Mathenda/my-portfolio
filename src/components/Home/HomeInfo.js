@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import FadeInSection from "../FadeInSection";
 
 import {
     AiFillGithub,
@@ -8,14 +8,17 @@ import {
     AiFillInstagram,
   } from "react-icons/ai";
 
-  function HomeInfo(){
+  function HomeInfo(props){
+    
     return (
         <Container fluid className="home-about-section" id="about">
         <Container>
+      <FadeInSection>
+
           <Row>
-            <Col md={8} className="home-about-description">
+            <Col md={12} className="home-about-description">
               <h1 style={{ fontSize: "2.6em" }}>
-                LET ME <span className="purple"> INTRODUCE </span> MYSELF
+                <span className="purple"> ABOUT </span> ME
               </h1>
               <p className="home-about-body">
                 I fell in love with programming at a young age and have been enduring to expand on my interests throughout the years
@@ -56,6 +59,7 @@ import {
               {/* </Tilt> */}
             {/* </Col> */}
           </Row>
+          </FadeInSection>
           <Row>
             <Col md={12} className="home-about-social">
               <h1>FIND ME ON</h1>

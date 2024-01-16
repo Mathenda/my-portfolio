@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { ImRadioUnchecked } from "react-icons/im";
 
 
 function AboutInfo(){
@@ -12,8 +12,7 @@ function AboutInfo(){
                 Hi Everyone, I am <span className="purple">Mathenda Maphasha </span>
                 from <span className="purple"> Pretoria, South africa.</span>
                 <br />
-                {/* I am currently employed as a software developer at Lorem.
-                <br /> */}
+
                 I am in the process of completing a BSc in Computer science at the University of Pretoria
                 <br />
                 <br />
@@ -21,13 +20,13 @@ function AboutInfo(){
               </p>
               <ul>
                 <li className="about-activity">
-                  <ImPointRight /> Playing Games
+                  <ImRadioUnchecked  /> Reading
                 </li>
                 <li className="about-activity">
-                  <ImPointRight /> Photography
+                  <ImRadioUnchecked  /> Photography
                 </li>
                 <li className="about-activity">
-                  <ImPointRight /> Travelling
+                  <ImRadioUnchecked  /> Travelling
                 </li>
               </ul>
     

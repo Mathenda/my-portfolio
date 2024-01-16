@@ -143,10 +143,11 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #0C3845 !important;
+    background-color: transparent !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
+    
   }
 }
 .navbar-brand {
@@ -207,38 +208,43 @@ button:focus {
 /* --------- */
 /* Home section */
 /* --------- */
-.wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
+@media (min-width: 767px) {
+  .scroll-downs {
+    position: relative;
+    top: 190px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /* padding: 270px; */
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
+    
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
   }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
   }
 }
 #tsparticles {
@@ -259,14 +265,21 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
+  padding-bottom: 400px !important;
   padding-top: 30px !important;
 }
 
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
-  text-align: left;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .home-content {
+    padding: 9rem 0 2rem !important;
+    color: whitesmoke;
+    text-align: left;
+  }
 }
 
 .heading {
@@ -348,6 +361,46 @@ button:focus {
   position: relative !important;
   padding-inline-start: 0 !important;
 }
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.Mfade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 9000ms,
+    visibility 9000ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.Mfade-in-section.Mis-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+/* .fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.2s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+  transition-delay: 0s;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+} */
 
 .home-social-icons {
   position: relative !important;
@@ -459,7 +512,6 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px #45474C !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -469,7 +521,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px #9099AF !important;
+  box-shadow: 0 1px 1px 1px #9099AF !important;
 }
 
 .blog-card {
@@ -540,8 +592,18 @@ button:focus {
 /* --------- */
 /* About */
 /* --------- */
+@media (max-width: 767px) {
+.about-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+}
 
 .about-section {
+  /* left: 10px; */
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
@@ -554,12 +616,12 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid #45474C !important;
+  border: 1.7px none #45474C !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  /* box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important; */
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
