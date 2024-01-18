@@ -9,11 +9,12 @@ function AboutInfo(){
           <Card.Body>
             <blockquote className="blockquote mb-3">
               <p style={{ textAlign: "justify" }}>
-                Hi Everyone, I am <span className="purple">Mathenda Maphasha </span>
+                Hi Everyone, I'm <span className="purple">Mathenda Maphasha </span>
                 from <span className="purple"> Pretoria, South africa.</span>
                 <br />
-
-                I am in the process of completing a BSc in Computer science at the University of Pretoria
+                I am a free-lance web developer based South Africa.
+                <br></br>
+                I am a final year Computer science Student at the University Of Pretoria
                 <br />
                 <br />
                 Apart from coding, some other activities that I love to do!
