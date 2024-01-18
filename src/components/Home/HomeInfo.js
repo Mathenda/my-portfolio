@@ -1,12 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import FadeInSection from "../FadeInSection";
-
+import { FaDiscord, FaWhatsapp } from "react-icons/fa";
 import {
     AiFillGithub,
     AiOutlineTwitter,
     AiFillInstagram,
+    AiOutlineMail
   } from "react-icons/ai";
+
+
 
   function HomeInfo(props){
     
@@ -87,14 +90,24 @@ import {
                     <AiOutlineTwitter />
                   </a>
                 </li>
-                {/* <li className="social-icons">
+                <li className="social-icons">
                   <a
-                    href="https://www.linkedin.com/in/soumyajit4419/"
+                    href="https://discordapp.com/users/335694466998599681"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
                   >
-                    <FaLinkedinIn />
+                    <FaDiscord />
+                  </a>
+                </li>
+                {/* <li className="social-icons">
+                  <a
+                    href="https://wa.me/27730908426 "
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <FaWhatsapp />
                   </a>
                 </li> */}
                 <li className="social-icons">

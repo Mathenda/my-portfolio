@@ -413,6 +413,8 @@ button:focus {
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
 }
 
 .home-social-icons::before {
@@ -438,12 +440,14 @@ button:focus {
   color: #526cff;
   box-shadow: 0 0 5px #5770fc;
   text-shadow: 0 0 2px #445ff8;
+  max-width: 300px;
 }
 
 .social-icons {
   display: inline-block !important;
   padding-right: 15px;
   padding-left: 15px;
+  
 }
 
 .icon-colour {
