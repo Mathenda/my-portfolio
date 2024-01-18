@@ -17,7 +17,7 @@ function Footer(){
                     <h3>Developed by Mathenda Maphasha</h3>
                 </Col>
                 <Col md="4" className="footer-copywright">
-                    <h3>Copyright © {year} EMM</h3>
+                    <h3>email for Enquiries at Mathendam@gmail.com</h3>
                 </Col>
                 <Col md="4" className="footer-body">
                     <ul className="footer-icons">
