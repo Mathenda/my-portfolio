@@ -11,9 +11,12 @@ import { Row } from "react-bootstrap";
 function Github() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
+                      <div class="stack-title">
+                <h3><span>Days I code</span><span class="bg-text">Contributions</span></h3>
+            </div>
+      {/* <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
         Days I <strong className="purple">Code</strong>
-      </h1>
+      </h1> */}
       {/* <GitHubCalendar
         username="The1Don1"
         blockSize={15}
@@ -22,10 +25,10 @@ function Github() {
         colorScheme="dark"
         fontSize={16}
       /> */}
-      <GitHubCalendar
+      <GitHubCalendar style={{justifyContent: "right"}}
         username="The1Don1"
         blockSize={14}
-        blockRadius={7}
+        // blockRadius={7}
         blockMargin={5}
         fontSize={16}
         colorScheme="dark"

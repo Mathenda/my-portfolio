@@ -4,6 +4,7 @@ import AboutInfo from "./AboutInfo"
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
 import Github from "./Github";
+
 function About(){
     return (
         <Container fluid className="about-section">
@@ -17,21 +18,28 @@ function About(){
                     paddingBottom: "50px",
                     }}
                 >
-                    <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <div class="stack-title">
+                <h2><span>About Me</span><span class="bg-text">WHO I AM</span></h2>
+            </div>
+
+
+
+                    {/* <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
                     Know Who <strong className="purple">I AM</strong>
-                    </h1>
+                    </h1> */}
                     <AboutInfo />
                 </Col>
-                </Row>
-                <h1 className="project-heading">
-                Professional <strong className="purple">Skillset </strong>
-                </h1>
 
+                </Row>
+
+                <div class="stack-title">
+                <h3><span>Professional Skillset</span><span class="bg-text">languages</span></h3>
+            </div>
                 <Techstack />
 
-                <h1 className="project-heading">
-                <strong className="purple">Tools</strong> I use
-                </h1>
+                <div class="stack-title">
+                <h3><span>Tools I use</span><span class="bg-text">Software</span></h3>
+            </div>
                 <Toolstack />
 
                 <Github />

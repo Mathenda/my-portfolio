@@ -12,13 +12,13 @@ function Projects(){
     return(
         <Container fluid className="project-section">
             <Container>
-                <h1 className="project-heading">
-                    My Recent Projects
-                </h1>
-                <p style={{ color: "white" }}>
+            <div class="stack-title">
+                <h2><span>Projects</span><span class="bg-text">My Work</span></h2>
+            </div>
+                <p style={{ color: "white", paddingTop: "30px" }}>
                     Here are a few projects I've worked on recently.
                 </p>
-                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                <Row style={{ justifyContent: "center", paddingBottom: "5px" }}>
           <Col md={4} className="project-card">
             <ProjectInfo
               imgPath={notes}

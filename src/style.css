@@ -12,7 +12,21 @@ html {
 
   --imp-text-color: #9099AF;
 }
-
+:root {
+  --color-primary: #191d2b;
+  --color-secondary: #27AE60;
+  --color-white: #FFFFFF;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -599,17 +613,161 @@ button:focus {
 @media (max-width: 767px) {
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-top: 90px !important;
+  padding-bottom: 0px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
 }
+.stack-title {
+  text-align: center;
+}
+.stack-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.stack-title h3 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.stack-title h2 span {
+  color: rgb(155 126 172);
+  position: relative;
+  z-index: 2;
+}
+.stack-title h3 span {
+  color: var(--imp-text-color);
+  position: relative;
+  z-index: 2;
+}
+.stack-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-4);
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  opacity: 80%;
+  font-size: 6.3rem;
+}
+
+.stack-title h3 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-4);
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  opacity: 50%;
+  font-size: 4.3rem;
+}
+@media screen and (max-width: 600px) {
+
+  .container {
+    padding: 2rem 2.5rem !important;
+  }
+
+
+  .stack-title h2 {
+    font-size: 2rem;
+  }
+  .stack-title h2 span {
+    font-size: 2.3rem;
+  }
+  .stack-title h2 .bg-text {
+    font-size: 2.3rem;
+  }
+
+
+  .stack-title h3 {
+    font-size: 1rem;
+  }
+  .stack-title h3 span {
+    font-size: 1.3rem;
+  }
+  .stack-title h3 .bg-text {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1432px) {
+  .container {
+    padding: 7rem 11rem;
+  }
+
+  .stack-title h2 .bg-text {
+    font-size: 5.5rem;
+  }
+  
+  .stack-title h3 .bg-text {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+  }
+
+  .stack-title h2 {
+    font-size: 4rem;
+  }
+  .stack-title h2 span {
+    font-size: 4rem;
+  }
+  .stack-title h2 .bg-text {
+    font-size: 4.5rem;
+  }
+  .stack-title h3 {
+    font-size: 2rem;
+  }
+  .stack-title h3 span {
+    font-size: 2rem;
+  }
+  .stack-title h3 .bg-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+
+  .stack-title h2 {
+    font-size: 3rem;
+  }
+  .stack-title h2 span {
+    font-size: 3rem;
+  }
+  .stack-title h2 .bg-text {
+    font-size: 4rem;
+  }
+  .stack-title h3 {
+    font-size: 2rem;
+  }
+  .stack-title h3 span {
+    font-size: 2rem;
+  }
+  .stack-title h3 .bg-text {
+    font-size: 2rem;
+  }
+}
+
+
 
 .about-section {
   /* left: 10px; */
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 150px;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
@@ -645,8 +803,19 @@ button:focus {
   padding: 20px !important;
   line-height: 1.6 !important;
 }
+@media (max-width: 767px) {
+.quote-card-view {
+  padding-top: 30px !important;
+  padding-bottom: 50px;
+  border: none !important;
+  color: white !important;
+  background-color: black !important;
+}
+}
 
 .quote-card-view {
+  padding-top: 80px;
+  padding-bottom: 100px;
   border: none !important;
   color: white !important;
   background-color: transparent !important;
