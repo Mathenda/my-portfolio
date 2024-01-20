@@ -164,6 +164,19 @@ button:focus {
     
   }
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    /* padding: 1rem 2rem !important; */
+    height: 10%;
+    font-size: 1.4rem !important;
+    background-color: transparent !important;
+  }
+  .navbar-nav .nav-item a::after {
+    display: none !important;
+    
+  }
+}
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -282,7 +295,11 @@ button:focus {
   padding-bottom: 400px !important;
   padding-top: 30px !important;
 }
-
+@media (min-width: 1024px) {
+.home-section {
+  padding-bottom: 750px !important;
+}
+}
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
