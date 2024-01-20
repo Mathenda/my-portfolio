@@ -166,10 +166,10 @@ button:focus {
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 780px) and (max-width: 1024px) {
   .navbar {
     padding: 1rem 2rem !important;
-    height: 10%;
+    height: 10% !important;
     font-size: 1.4rem !important;
     background-color: transparent !important;
   }
