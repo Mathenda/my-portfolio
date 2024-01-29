@@ -300,7 +300,8 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 400px !important;
+  height: 100dvh;
+  padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
 @media (min-width: 1024px) {
@@ -370,6 +371,7 @@ button:focus {
 
 .home-about-section {
   position: relative;
+  bottom: 30px;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
