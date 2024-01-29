@@ -6,8 +6,8 @@ html {
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(17, 16, 16, 0.5),
+    rgba(12, 10, 22, 0.2)
   );
 
   --imp-text-color: #9099AF;
@@ -84,6 +84,11 @@ button:focus {
   background: #45474C;
   border-radius: 12px;
 }
+
+/* --------- */
+/* scroll tex  */
+/* --------- */
+
 
 /* --------- */
 /* Navbar Section  */
