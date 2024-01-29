@@ -52,7 +52,7 @@ import {
                 </i>
                 &nbsp; like
                 <i>
-                  <b className="purple"> React.js and Next.js</b>
+                  <b className="purple"> Node.js and Next.js</b>
                 </i>
               </p>
             </Col>
