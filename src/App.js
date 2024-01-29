@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Resume from './components/Resume/Resume';
+import useLocalStorage from 'use-local-storage';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -14,11 +15,20 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
+
+
 function App() {
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
+const switchTheme = () => {
+  const newTheme = theme === 'light' ? 'dark' : 'light';
+  setTheme(newTheme);
+}
   return (
     <Router>
-    <div className="App">
-        <NavBar />
+    <div className="App" data-theme={theme}>
+        <NavBar switchTheme={switchTheme}/>
         <Routes>
           <Route path = "/" element={<Home />} />
           <Route path = "/about" element={<About />} />

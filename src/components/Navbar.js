@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
+import Toggle from "react-toggle";
+import "react-toggle/style.css";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -13,7 +15,7 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar() {
+function NavBar({switchTheme}) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -28,6 +30,7 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
+
     <Navbar
       expanded={expand}
       fixed="top"
@@ -38,6 +41,7 @@ function NavBar() {
         <Navbar.Brand href="/my-portfolio/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -55,6 +59,7 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
+
         <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -86,6 +91,12 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item  className = "Dark-Toggle">
+        <Toggle
+            onChange={switchTheme}
+            aria-label="Dark mode toggle"
+        />
+        </Nav.Item>
         </Nav>
 
         </Navbar.Collapse>
