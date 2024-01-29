@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import FadeInSection from "../FadeInSection";
 import { FaDiscord, FaWhatsapp } from "react-icons/fa";
@@ -12,7 +12,7 @@ import {
 
 
   function HomeInfo(props){
-    
+    const [hover, setHover] = useState(false);
     return (
         <Container fluid className="home-about-section" id="about">
         <Container>
@@ -72,12 +72,39 @@ import {
               <ul className="home-about-social-links">
                 <li className="social-icons">
                   <a
-                    href="https://github.com/The1Don1"
+                    // href="https://github.com/The1Don1"
                     target="_blank"
                     rel="noreferrer"
-                    className="icon-colour  home-social-icons"
+                    className="icon-colour home-social-icons"
+                    onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
                   >
-                    <AiFillGithub />
+                    <AiOutlineMail />
+
+                    <div className={`icon-with-text fancy ${hover ? 'hover' : ''}`}>
+                    {/* <p class= "word fancy"> */}
+                    <span class="letter">M</span>
+                      <span class="letter">A</span>
+                      <span class="letter">T</span>
+                      <span class="letter">H</span>
+                      <span class="letter">E</span>
+                      <span class="letter">N</span>
+                      <span class="letter">D</span>
+                      <span class="letter">A</span>
+                      <span class="letter">M</span>
+                      <span class="letter">@</span>
+                      <span class="letter">G</span>
+                      <span class="letter">M</span>
+                      <span class="letter">A</span>
+                      <span class="letter">I</span>
+                      <span class="letter">L</span>
+                      <span class="letter">.</span>
+                      <span class="letter">C</span>
+                      <span class="letter">O</span>
+                      <span class="letter">M</span>
+                    {/* </p> */}
+                    </div>
+
+
                   </a>
                 </li>
                 <li className="social-icons">
@@ -100,16 +127,16 @@ import {
                     <FaDiscord />
                   </a>
                 </li>
-                {/* <li className="social-icons">
+                <li className="social-icons">
                   <a
-                    href="https://wa.me/27730908426 "
+                    href="https://github.com/The1Don1"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
                   >
-                    <FaWhatsapp />
+                    <AiFillGithub />
                   </a>
-                </li> */}
+                </li>
                 <li className="social-icons">
                   <a
                     href="https://www.instagram.com/_Mathenda_"

@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import Toggle from "react-toggle";
+import { motion } from "framer-motion";
 import "react-toggle/style.css";
 import {
   AiFillStar,
