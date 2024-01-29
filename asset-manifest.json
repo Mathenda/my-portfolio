@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.fc97bf38.css",
-    "main.js": "/my-portfolio/static/js/main.e128f344.js",
+    "main.css": "/my-portfolio/static/css/main.d7a9d239.css",
+    "main.js": "/my-portfolio/static/js/main.c3c51200.js",
     "static/js/787.2dcca737.chunk.js": "/my-portfolio/static/js/787.2dcca737.chunk.js",
     "static/media/home-bg.jpg": "/my-portfolio/static/media/home-bg.4ed47eb58cf9ebc5ef94.jpg",
+    "static/media/dark-home-bg.jpg": "/my-portfolio/static/media/dark-home-bg.aaa643f63318f620801b.jpg",
     "static/media/Mathenda_Maphasha_-_CV[1].pdf": "/my-portfolio/static/media/Mathenda_Maphasha_-_CV[1].9c265b70066b9129c90c.pdf",
     "static/media/home-main.svg": "/my-portfolio/static/media/home-main.04f57bbad71acf93794625a2b5281b6a.svg",
     "static/media/quiz.jpeg": "/my-portfolio/static/media/quiz.f7b0d4e0cd1219f07dc7.jpeg",
@@ -12,12 +13,12 @@
     "static/media/logo.svg": "/my-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/pre.svg": "/my-portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.fc97bf38.css.map": "/my-portfolio/static/css/main.fc97bf38.css.map",
-    "main.e128f344.js.map": "/my-portfolio/static/js/main.e128f344.js.map",
+    "main.d7a9d239.css.map": "/my-portfolio/static/css/main.d7a9d239.css.map",
+    "main.c3c51200.js.map": "/my-portfolio/static/js/main.c3c51200.js.map",
     "787.2dcca737.chunk.js.map": "/my-portfolio/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc97bf38.css",
-    "static/js/main.e128f344.js"
+    "static/css/main.d7a9d239.css",
+    "static/js/main.c3c51200.js"
   ]
 }
