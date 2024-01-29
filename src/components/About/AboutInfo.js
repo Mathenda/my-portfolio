@@ -38,7 +38,7 @@ function AboutInfo(){
                   </div>
                 </div>
                 </MouseFadeInSection>
-              <p style={{ color: "rgb(155 126 172)" }}>
+              <p style={{ color: "var(--color-purple-3)" }}>
                 "Progress is man's ability to complicate simplicity."{" "}
               </p>
               <footer className="blockquote-footer">Thor Heyerdahl
