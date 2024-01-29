@@ -675,7 +675,7 @@ position: relative;
 }
 
 .fancy.hover > .letter:nth-child(16) {
-  transform: translate(2000%, -60%) rotate(-6deg);
+  transform: translate(1700%, -100%) rotate(-6deg);
 }
 
 .fancy.hover > .letter:nth-child(17) {
