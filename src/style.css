@@ -1,7 +1,7 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgb(11 53 65), rgb(20 15 35)
+    rgb(5 152 171), rgb(6 140 163)
   );
 
   --image-gradient: linear-gradient(
@@ -94,7 +94,8 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #0B3A46 !important;
+  background-color: transparent !important;
+  /* background-color: #0B3A46 !important; */
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -116,6 +117,7 @@ button:focus {
 .navbar-toggler span {
   display: block !important;
   background-color: #9099AF !important;
+  /* background-color: #9099AF !important; */
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -243,10 +245,10 @@ button:focus {
 /* --------- */
 @media (min-width: 767px) {
   .scroll-downs {
-    position: relative;
-    top: 190px;
+    position:absolute;
+    top: 10rem;
     right: 0;
-    bottom: 0;
+    bottom: 60%;
     left: 0;
     margin: auto;
     /* padding: 270px; */
@@ -299,7 +301,7 @@ button:focus {
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 400px !important;
-  padding-top: 30px !important;
+  padding-top: 590px !important;
 }
 @media (min-width: 1024px) {
 .home-section {
@@ -307,9 +309,11 @@ button:focus {
 }
 }
 .home-content {
+  position: relative;
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: center;
+  bottom: 600px;
 }
 @media (max-width: 767px) {
   .home-content {
@@ -354,22 +358,13 @@ button:focus {
   }
 }
 
-.myAvtar {
-  justify-content: center !important;
-  padding-top: 9em !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
-}
 
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background-color: rgb(1 141 166 / 50%) !important;
+  /* bottom: -1024px; */
 }
 
 .home-about-description {
