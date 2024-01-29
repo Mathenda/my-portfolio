@@ -37,6 +37,7 @@ function Home(){
                 </MouseFadeInSection>
 
             </Container>
+
             <HomeInfo defer/>
         </section>
     );
