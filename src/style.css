@@ -596,7 +596,7 @@ position: relative;
 .icon-with-text > .letter{
   position: absolute;
   z-index: -1;
-  left: 10px;
+  left: 4px;
   top: -40px;
   }
 .fancy > .letter {
