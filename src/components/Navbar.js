@@ -57,7 +57,8 @@ function NavBar({switchTheme}) {
         <Nav className="ms-auto" defaultActiveKey="#home">
         <Nav.Item>
               <Nav.Link as={Link} to="/my-portfolio/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px", marginRight: "6px", color: "var(--color-purple-3)" }} /> 
+                <span style={{ color: "var(--color-purple-3)" }}>Home</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -67,7 +68,8 @@ function NavBar({switchTheme}) {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px", color: "var(--color-purple-3)" }} />
+                <span style={{ color: "var(--color-purple-3)" }}>About</span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -77,9 +79,9 @@ function NavBar({switchTheme}) {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
+                  style={{ marginBottom: "2px", color: "var(--color-purple-3)" }}
                 />{" "}
-                Projects
+                  <span style={{ color: "var(--color-purple-3)" }}>Projects</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -89,7 +91,8 @@ function NavBar({switchTheme}) {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px", color: "var(--color-purple-3)" }} />
+                <span style={{ color: "var(--color-purple-3)" }}>Resume</span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item  className = "Dark-Toggle">
