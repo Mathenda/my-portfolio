@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');body{
   --background-image: linear-gradient(360deg, rgb(0, 125, 145), rgb(6 140 163));
 }
 [data-theme='dark'] {
@@ -8,7 +8,7 @@ body{
 
 body {
   margin: 0;
-  font-family: "Raleway", serif !important;
+  font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: var(--background-image);

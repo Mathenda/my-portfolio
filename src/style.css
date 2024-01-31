@@ -30,6 +30,12 @@ html {
   --color-purple-3: #73757f;
   --color-purple-4: #6a6978;
   --color-purple-5: #6a6978;
+
+  --github-color-1: #f0f0f0;
+  --github-color-2: #c4edde;
+  --github-color-3: #7ac7c4;
+  --github-color-4: #f73859;
+  --github-color-5: #384259;
   --bg-image: url('./Assets/dark-home-bg.jpg');
   /* background-image: linear-gradient(360deg, rgb(11 53 65), rgb(0 0 0)); */
 
@@ -65,6 +71,11 @@ body {
   --color-purple-3: #2c2f50;
   --color-purple-4: #01082d;
   --color-purple-5: #000e30;
+  --github-color-1: #383838;
+  --github-color-2: #4D455D;
+  --github-color-3: #7DB9B6;
+  --github-color-4: #F5E9CF;
+  --github-color-5: #E96479;
   --bg-image: url('./Assets/home-bg.jpg');
   /* --color-purple-6: #12181b; */
   --br-sm-2: 14px;
@@ -300,6 +311,29 @@ button:focus {
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
+
+#Navbar-link .Navbar-icon{
+  transition: transform 2s ease;
+  /* transition-duration: 800ms; */
+}
+
+#Navbar-link:hover .Navbar-icon{
+  transform: translateX(150%);
+  /* transition: transform 2s ease; */
+}
+
+#Navbar-link .Navbar-description{
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+#Navbar-link:hover .Navbar-description{
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+
+
 
 /* --------- */
 /* Home section */
@@ -675,7 +709,7 @@ position: relative;
 }
 
 .fancy.hover > .letter:nth-child(16) {
-  transform: translate(1700%, -100%) rotate(-6deg);
+  transform: translate(1300%, -100%) rotate(-6deg);
 }
 
 .fancy.hover > .letter:nth-child(17) {
@@ -683,7 +717,7 @@ position: relative;
 }
 
 .fancy.hover > .letter:nth-child(18) {
-  transform: translate(600%, -70%) rotate(-20deg);
+  transform: translate(630%, -70%) rotate(-20deg);
 }
 .fancy.hover > .letter:nth-child(19) {
   transform: translate(600%, -70%) rotate(-9deg);

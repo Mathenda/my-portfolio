@@ -5,7 +5,8 @@ import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
 import Github from "./Github";
 
-function About(){
+function About({CurrentTheme}){
+    // console.log(CurrentTheme);
     return (
         <Container fluid className="about-section">
             <Container>
@@ -42,7 +43,7 @@ function About(){
             </div>
                 <Toolstack />
 
-                <Github />
+                <Github GithubTheme={CurrentTheme}/>
         </Container>
 
         </Container>

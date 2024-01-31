@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import def from "../../Assets/logo.png";
 import academicWriters from "../../Assets/writers.jpg";
 import quiz from "../../Assets/quiz.jpeg";
 import film from "../../Assets/film.png";

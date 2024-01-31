@@ -34,6 +34,8 @@ const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light
 const switchTheme = () => {
   const newTheme = theme === 'light' ? 'dark' : 'light';
   setTheme(newTheme);
+// console.log(newTheme);
+
 }
   return (
     <Router>
@@ -42,8 +44,8 @@ const switchTheme = () => {
         <NavBar switchTheme={switchTheme}/>
         <Routes>
           <Route path = "/" element={<Home />} />
-          <Route path = "/about" element={<About />} />
-          <Route path="/project" element={<Projects />} />
+          <Route path = "/about" element={<About CurrentTheme={theme}/>} />
+          <Route path="/project" element={<Projects/>} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} /> 
         </Routes>

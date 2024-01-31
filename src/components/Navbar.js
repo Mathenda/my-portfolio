@@ -9,11 +9,12 @@ import { motion } from "framer-motion";
 import "react-toggle/style.css";
 import {
   AiFillStar,
-  AiOutlineHome,
+  // AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser,
+  // AiOutlineUser,
 } from "react-icons/ai";
-
+import { GoHome, GoPerson, GoNote, GoMultiSelect } from "react-icons/go";
+// import { FaRegUser} from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar({switchTheme}) {
@@ -55,44 +56,44 @@ function NavBar({switchTheme}) {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto" defaultActiveKey="#home">
-        <Nav.Item>
+        <Nav.Item id="Navbar-link">
               <Nav.Link as={Link} to="/my-portfolio/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px", marginRight: "6px", color: "var(--color-purple-3)" }} /> 
-                <span style={{ color: "var(--color-purple-3)" }}>Home</span>
+                <GoHome class="Navbar-icon" style={{ marginBottom: "2px", marginRight: "6px", color: "var(--color-purple-3)" }} /> 
+                <span class="Navbar-description" style={{ color: "var(--color-purple-3)" }}>Home</span>
               </Nav.Link>
             </Nav.Item>
 
-        <Nav.Item>
+        <Nav.Item id="Navbar-link">
               <Nav.Link
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px", color: "var(--color-purple-3)" }} />
-                <span style={{ color: "var(--color-purple-3)" }}>About</span>
+                <GoPerson class="Navbar-icon" style={{ marginBottom: "2px", color: "var(--color-purple-3)" }} />
+                <span  class="Navbar-description" style={{ color: "var(--color-purple-3)" }}>About</span>
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item id="Navbar-link">
               <Nav.Link
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <GoMultiSelect class="Navbar-icon" 
                   style={{ marginBottom: "2px", color: "var(--color-purple-3)" }}
                 />{" "}
-                  <span style={{ color: "var(--color-purple-3)" }}>Projects</span>
+                  <span  class="Navbar-description" style={{ color: "var(--color-purple-3)" }}>Projects</span>
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
+            <Nav.Item id="Navbar-link">
+              <Nav.Link 
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px", color: "var(--color-purple-3)" }} />
-                <span style={{ color: "var(--color-purple-3)" }}>Resume</span>
+                <GoNote  class="Navbar-icon" style={{ marginBottom: "2px", marginRight: "2px", color: "var(--color-purple-3)" }} />
+                <span class="Navbar-description" style={{ color: "var(--color-purple-3)" }}>Resume</span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item  className = "Dark-Toggle">
