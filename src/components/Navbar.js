@@ -98,6 +98,10 @@ function NavBar({switchTheme}) {
             <Nav.Item  className = "Dark-Toggle">
         <Toggle
             onChange={switchTheme}
+            icons={{
+              checked: null,
+              unchecked: null,
+            }}
             aria-label="Dark mode toggle"
         />
         </Nav.Item>

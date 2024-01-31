@@ -1,9 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
 import HomeInfo from "./HomeInfo";
+
 import Type from "./Type";
-import FadeInSection from "../FadeInSection";
 import MouseFadeInSection from "../MouseFadeInSection";
 function Home(){
     return (

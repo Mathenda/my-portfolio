@@ -368,7 +368,7 @@ button:focus {
   height: 100dvh;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
-  transition: all 0.4s ease-in-out;
+  /* transition: all 0.4s ease-in-out; */
 
 }
 

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import "./style.css";
 import NavBar from "./components/Navbar";
@@ -8,6 +7,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Resume from './components/Resume/Resume';
 import useLocalStorage from 'use-local-storage';
+import React, {useState, useEffect} from 'react';
+import Preloader from  "../src/components/Pre";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -18,6 +19,15 @@ import {
 
 
 function App() {
+  const [load, upadateLoad] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      upadateLoad(false);
+    }, 1200);
+
+    return () => clearTimeout(timer);
+  }, []);
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
@@ -27,6 +37,7 @@ const switchTheme = () => {
 }
   return (
     <Router>
+            <Preloader load={load} />
     <div className="App" data-theme={theme}>
         <NavBar switchTheme={switchTheme}/>
         <Routes>
