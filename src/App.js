@@ -41,7 +41,7 @@ const switchTheme = () => {
     <Router>
             <Preloader load={load} />
     <div className="App" data-theme={theme}>
-        <NavBar switchTheme={switchTheme}/>
+        <NavBar switchTheme={switchTheme} CurrentTheme={theme}/>
         <Routes>
           <Route path = "/" element={<Home />} />
           <Route path = "/about" element={<About CurrentTheme={theme}/>} />

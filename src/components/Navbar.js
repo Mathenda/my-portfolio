@@ -5,19 +5,10 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import Toggle from "react-toggle";
-import { motion } from "framer-motion";
 import "react-toggle/style.css";
-import {
-  AiFillStar,
-  // AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  // AiOutlineUser,
-} from "react-icons/ai";
 import { GoHome, GoPerson, GoNote, GoMultiSelect } from "react-icons/go";
-// import { FaRegUser} from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
 
-function NavBar({switchTheme}) {
+function NavBar({switchTheme, CurrentTheme}) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -58,8 +49,8 @@ function NavBar({switchTheme}) {
         <Nav className="ms-auto" defaultActiveKey="#home">
         <Nav.Item id="Navbar-link">
               <Nav.Link as={Link} to="/my-portfolio/" onClick={() => updateExpanded(false)}>
-                <GoHome class="Navbar-icon" style={{ marginBottom: "2px", marginRight: "6px", color: "var(--color-purple-3)" }} /> 
-                <span class="Navbar-description" style={{ color: "var(--color-purple-3)" }}>Home</span>
+                <GoHome className="Navbar-icon" style={{ marginBottom: "2px", marginRight: "6px", color: "var(--color-purple-3)" }} /> 
+                <span className="Navbar-description" style={{ color: "var(--color-purple-3)" }}>Home</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -69,8 +60,8 @@ function NavBar({switchTheme}) {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <GoPerson class="Navbar-icon" style={{ marginBottom: "2px", color: "var(--color-purple-3)" }} />
-                <span  class="Navbar-description" style={{ color: "var(--color-purple-3)" }}>About</span>
+                <GoPerson className="Navbar-icon" style={{ marginBottom: "2px", color: "var(--color-purple-3)" }} />
+                <span  className="Navbar-description" style={{ color: "var(--color-purple-3)" }}>About</span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item id="Navbar-link">
@@ -79,10 +70,10 @@ function NavBar({switchTheme}) {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <GoMultiSelect class="Navbar-icon" 
+                <GoMultiSelect className="Navbar-icon" 
                   style={{ marginBottom: "2px", color: "var(--color-purple-3)" }}
                 />{" "}
-                  <span  class="Navbar-description" style={{ color: "var(--color-purple-3)" }}>Projects</span>
+                  <span  className="Navbar-description" style={{ color: "var(--color-purple-3)" }}>Projects</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -92,16 +83,18 @@ function NavBar({switchTheme}) {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <GoNote  class="Navbar-icon" style={{ marginBottom: "2px", marginRight: "2px", color: "var(--color-purple-3)" }} />
-                <span class="Navbar-description" style={{ color: "var(--color-purple-3)" }}>Resume</span>
+                <GoNote  className="Navbar-icon" style={{ marginBottom: "2px", marginRight: "2px", color: "var(--color-purple-3)" }} />
+                <span className="Navbar-description" style={{ color: "var(--color-purple-3)" }}>Resume</span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item  className = "Dark-Toggle">
         <Toggle
+        className="my-toggle"
             onChange={switchTheme}
+            checked={CurrentTheme === 'dark'}
             icons={{
-              checked: null,
-              unchecked: null,
+              checked: "🌑",
+              unchecked: "☀️",
             }}
             aria-label="Dark mode toggle"
         />

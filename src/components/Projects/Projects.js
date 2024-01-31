@@ -11,8 +11,8 @@ function Projects(){
     return(
         <Container fluid className="project-section">
             <Container>
-            <div class="stack-title">
-                <h2><span>Projects</span><span class="bg-text">My Work</span></h2>
+            <div className="stack-title">
+                <h2><span>Projects</span><span className="bg-text">My Work</span></h2>
             </div>
                 <p style={{ color: "var(--color-purple-3) ", paddingTop: "30px" }}>
                     Here are a few projects I've worked on recently.

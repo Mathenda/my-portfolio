@@ -332,9 +332,35 @@ button:focus {
   transition: opacity 0.5s ease-out;
 }
 
-
-
-
+.my-toggle .react-toggle-track-check,
+.my-toggle .react-toggle-track-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-toggle.react-toggle--checked:hover.react-toggle-track {
+  background-color: black;
+}
+.my-toggle.react-toggle--checked .react-toggle-track {
+  background-color: transparent;
+}
+.my-toggle:not(.react-toggle--checked) .react-toggle-track {
+  background-color: transparent;
+}
+.my-toggle.react-toggle--checked .react-toggle-thumb {
+  background: transparent no-repeat center !important;
+  background-color: transparent;
+  background-image: transparent;
+  border-color: transparent !important;
+  background-size: cover;
+}
+.my-toggle:not(.react-toggle--checked) .react-toggle-thumb {
+  background: transparent no-repeat center !important;
+  background-color: transparent;
+  background-image: transparent;
+  border-color: transparent !important;
+  background-size: cover;
+}
 /* --------- */
 /* Home section */
 /* --------- */

@@ -19,8 +19,8 @@ function About({CurrentTheme}){
                     paddingBottom: "50px",
                     }}
                 >
-            <div class="stack-title">
-                <h2><span>About Me</span><span class="bg-text">WHO I AM</span></h2>
+            <div className="stack-title">
+                <h2><span>About Me</span><span className="bg-text">WHO I AM</span></h2>
             </div>
 
 
@@ -33,13 +33,13 @@ function About({CurrentTheme}){
 
                 </Row>
 
-                <div class="stack-title">
-                <h3><span>Professional Skillset</span><span class="bg-text">languages</span></h3>
+                <div className="stack-title">
+                <h3><span>Professional Skillset</span><span className="bg-text">languages</span></h3>
             </div>
                 <Techstack />
 
-                <div class="stack-title">
-                <h3><span>Tools I use</span><span class="bg-text">Software</span></h3>
+                <div className="stack-title">
+                <h3><span>Tools I use</span><span className="bg-text">Software</span></h3>
             </div>
                 <Toolstack />
 

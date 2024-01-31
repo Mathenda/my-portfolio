@@ -15,8 +15,8 @@ function Github({GithubTheme}) {
   return (
     console.log(GithubTheme),
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-                      <div class="stack-title">
-                <h3><span>Days I code</span><span class="bg-text">Contributions</span></h3>
+                      <div className="stack-title">
+                <h3><span>Days I code</span><span className="bg-text">Contributions</span></h3>
             </div>
       {/* <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
         Days I <strong className="purple">Code</strong>

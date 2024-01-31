@@ -81,26 +81,26 @@ import {
                     <AiOutlineMail />
 
                     <div className={`icon-with-text fancy ${hover ? 'hover' : ''}`}>
-                    {/* <p class= "word fancy"> */}
-                    <span class="letter">M</span>
-                      <span class="letter">A</span>
-                      <span class="letter">T</span>
-                      <span class="letter">H</span>
-                      <span class="letter">E</span>
-                      <span class="letter">N</span>
-                      <span class="letter">D</span>
-                      <span class="letter">A</span>
-                      <span class="letter">M</span>
-                      <span class="letter">@</span>
-                      <span class="letter">G</span>
-                      <span class="letter">M</span>
-                      <span class="letter">A</span>
-                      <span class="letter">I</span>
-                      <span class="letter">L</span>
-                      <span class="letter">.</span>
-                      <span class="letter">C</span>
-                      <span class="letter">O</span>
-                      <span class="letter">M</span>
+                    {/* <p className= "word fancy"> */}
+                    <span className="letter">M</span>
+                      <span className="letter">A</span>
+                      <span className="letter">T</span>
+                      <span className="letter">H</span>
+                      <span className="letter">E</span>
+                      <span className="letter">N</span>
+                      <span className="letter">D</span>
+                      <span className="letter">A</span>
+                      <span className="letter">M</span>
+                      <span className="letter">@</span>
+                      <span className="letter">G</span>
+                      <span className="letter">M</span>
+                      <span className="letter">A</span>
+                      <span className="letter">I</span>
+                      <span className="letter">L</span>
+                      <span className="letter">.</span>
+                      <span className="letter">C</span>
+                      <span className="letter">O</span>
+                      <span className="letter">M</span>
                     {/* </p> */}
                     </div>
 
