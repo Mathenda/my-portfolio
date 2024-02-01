@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import AboutInfo from "./AboutInfo"
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
+import {Reveal} from "../Reveal";
 import Github from "./Github";
 
 function About({CurrentTheme}){

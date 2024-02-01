@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import FadeInSection from "../FadeInSection";
 import { FaDiscord, FaWhatsapp } from "react-icons/fa";
+import {Reveal} from "../Reveal";
 import {
     AiFillGithub,
     AiOutlineTwitter,
@@ -26,20 +27,24 @@ import {
               <p className="home-about-body">
                 From a young age, technology has fascinated me, and has been the driving force in expanding on my interests ever since
                 <br />
-                <br />I am fluent in the fundamentals like
-                <i>
-                  <b className="purple"> C++, Javascript and Java. </b>
-                </i>
+                <br /><Reveal>I am fluent in the fundamentals like
+                {/* <i> */}
+                  <b className="purple">:   C++, Javascript and Java. </b></Reveal>
+                {/* </i> */}
                 <br />
                 <br />
+                <Reveal>
                 I have developed interest in fields like &nbsp;
                 <i>
+                <b className="purple">
+
                   <b className="purple">Web Technologies and app development </b> and
                   also in areas related to{" "}
-                  <b className="purple">
-                    Artificial intelligence and machine learning
+                      Artificial intelligence and machine learning
                   </b>
                 </i>
+                </Reveal>
+
                 <br />
                 <br />
                 In the pursuit of expanding my knowledge, I also apply my passion for developing products
@@ -70,6 +75,26 @@ import {
                 Feel free to Find me on
               </p>
               <ul className="home-about-social-links">
+                <li className="social-icons">
+                  <a
+                    href="https://twitter.com/Mathenda1"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <AiOutlineTwitter />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://discordapp.com/users/335694466998599681"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <FaDiscord />
+                  </a>
+                </li>
                 <li className="social-icons">
                   <a
                     // href="https://github.com/The1Don1"
@@ -105,26 +130,6 @@ import {
                     </div>
 
 
-                  </a>
-                </li>
-                <li className="social-icons">
-                  <a
-                    href="https://twitter.com/Mathenda1"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                  >
-                    <AiOutlineTwitter />
-                  </a>
-                </li>
-                <li className="social-icons">
-                  <a
-                    href="https://discordapp.com/users/335694466998599681"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                  >
-                    <FaDiscord />
                   </a>
                 </li>
                 <li className="social-icons">
