@@ -8,6 +8,15 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@babel/core": "^7.23.9",
+    "@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly": "^7.23.7",
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
+    "@babel/plugin-transform-class-static-block": "^7.23.4",
+    "@csstools/postcss-is-pseudo-class": "^4.0.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "gh-pages": "^6.1.1",
+    "postcss-dir-pseudo-class": "^8.0.1",
+    "postcss-pseudo-class-any-link": "^9.0.1",
     "bootstrap": "^5.3.2",
     "framer-motion": "^10.18.0",
     "react": "^18.2.0",
@@ -37,12 +46,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
