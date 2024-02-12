@@ -12,6 +12,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project was built and inspired by [soumyajit4419](https://github.com/soumyajit4419/Portfolio)
+
 ## Available Scripts
 
 In the project directory, you can run:
