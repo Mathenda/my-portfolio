@@ -20,7 +20,18 @@ This project was built and inspired by [soumyajit4419](https://github.com/soumya
     node@21.4.0
     git@2.43.0.windows.1
 
-In the project directory, you can run:
+From the command clone this repository using:
+```bash
+#cloning my-portfolio
+$ git clone https://github.com/The1Don1/my-portfolio.git
+
+#move into root
+$cd my-portfolio
+
+#Remove current origin repository
+$git remote remove origin
+#used to remove the link to the original repository. When a repository is cloned, Git automatically creates a remote connection called "origin" that points to the original repository. This command removes that connection. This is done to add your own remote repository and push your changes there, instead of pushing them to the original repository.
+```
 
 ### `npm start`
 
