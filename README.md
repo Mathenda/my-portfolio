@@ -16,11 +16,9 @@ This project was built and inspired by [soumyajit4419](https://github.com/soumya
 # Install and deploy
 ## Pre-requisites
 
-    ```
     npm@10.4.0
     node@21.4.0
     git@2.43.0.windows.1
-    ```
 
 In the project directory, you can run:
 
