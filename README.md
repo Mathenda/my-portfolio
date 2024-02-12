@@ -30,7 +30,9 @@ $cd my-portfolio
 
 #Remove current origin repository
 $git remote remove origin
-#used to remove the link to the original repository. When a repository is cloned, Git automatically creates a remote connection called "origin" that points to the original repository. This command removes that connection. This is done to add your own remote repository and push your changes there, instead of pushing them to the original repository.
+#used to remove the link to the original repository.
+#When a repository is cloned, Git automatically creates a remote connection called "origin" that points to the original repository.
+#This command removes that connection. #This is done to add your own remote repository and push your changes there, instead of pushing them to the original repository.
 ```
 
 ### `npm start`
