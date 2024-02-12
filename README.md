@@ -6,14 +6,20 @@
 ☁︎ [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my portfolio \
 ☁︎ [<b>Framer Motion</b>](https://www.framer.com/motion/) - For animation control\
 ☁︎ [<b>NPM</b>](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager) - npm as the package manager\
-☁︎ [<b>React</b>](https://react.dev) - react.js as the framework\
+☁︎ [<b>React</b>](https://react.dev) - react.js as the framework
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This project was built and inspired by [soumyajit4419](https://github.com/soumyajit4419/Portfolio)
 
-## Available Scripts
+## Install and deploy
+# Pre-requisites
+    ```bash
+    npm@10.4.0
+    node@21.4.0
+    git@2.43.0.windows.1
+    ```
 
 In the project directory, you can run:
 
