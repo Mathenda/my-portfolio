@@ -1,5 +1,8 @@
 # My Personal Portfolio ☁️
 
+[![Site preview](/src/Assets/website-preview-light.png)](https://the1don1.github.io/my-portfolio/)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
