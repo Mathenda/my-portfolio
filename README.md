@@ -34,8 +34,18 @@ $git remote remove origin
 #When a repository is cloned, Git automatically creates a remote connection called "origin" that points to the original repository.
 #This command removes that connection. #This is done to add your own remote repository and push your changes there, instead of pushing them to the original repository.
 ```
+Using NPM: Simply run the below commands.
 
-### `npm start`
+```bash
+# 2024 Update - Fix Dependencies
+$ npm audit fix
+
+# Install dependencies
+$ npm install
+
+# Start the development server
+$ npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -51,5 +61,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
