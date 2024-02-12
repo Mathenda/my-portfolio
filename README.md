@@ -2,11 +2,12 @@
 
 [![Site preview](/src/Assets/website-preview-light.png)](https://the1don1.github.io/my-portfolio/)
 
-## Features 📋
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Typing animation using `Typed.js`\
-⚡️ Easy to modify
+## Tools 📋
+☁︎ [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my portfolio
+☁︎ [<b>Framer Motion</b>](https://www.framer.com/motion/) - For animation control
+☁︎ Valid HTML5 & CSS3\
+☁︎ Typing animation using `Typed.js`\
+☁︎ Easy to modify
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
