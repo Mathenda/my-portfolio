@@ -2,6 +2,12 @@
 
 [![Site preview](/src/Assets/website-preview-light.png)](https://the1don1.github.io/my-portfolio/)
 
+## Features 📋
+⚡️ Fully Responsive\
+⚡️ Valid HTML5 & CSS3\
+⚡️ Typing animation using `Typed.js`\
+⚡️ Easy to modify
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
