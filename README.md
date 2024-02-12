@@ -3,11 +3,10 @@
 [![Site preview](/src/Assets/website-preview-light.png)](https://the1don1.github.io/my-portfolio/)
 
 ## Tools 📋
-* ☁︎ [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my portfolio
-* ☁︎ [<b>Framer Motion</b>](https://www.framer.com/motion/) - For animation control
-☁︎ Valid HTML5 & CSS3\
-☁︎ Typing animation using `Typed.js`\
-☁︎ Easy to modify
+☁︎ [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my portfolio \
+☁︎ [<b>Framer Motion</b>](https://www.framer.com/motion/) - For animation control\
+☁︎ [<b>NPM</b>](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager) - npm as the package manager\
+☁︎ [<b>React</b>](https://react.dev) - react.js as the framework\
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
