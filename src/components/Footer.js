@@ -20,16 +20,7 @@ function Footer(){
                     <h3>email for Enquiries at Mathendam@gmail.com</h3>
                 </Col>
                 <Col md="4" className="footer-body">
-                    <ul className="footer-icons">
-                        <li className="social-icons">
-                            <a 
-                            href = "https://github.com/The1Don1"
-                            style={{color:"white"}}
-                            target="_blank"
-                            rel = " moopener noreferrer"
-                            ></a>
-                        </li>
-                    </ul>
+                    <h3>Co-Designed by Ofentse Ramothibe</h3>
                 </Col>
             </Row>
         </Container>
