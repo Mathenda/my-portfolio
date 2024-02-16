@@ -1,14 +1,26 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AboutInfo from "./AboutInfo"
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
+import { motion, useIsPresent } from "framer-motion";
 import {Reveal} from "../Reveal";
 import Github from "./Github";
+import { useLocation } from "react-router-dom";
 
 function About({CurrentTheme}){
     // console.log(CurrentTheme);
+    const Location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [Location]);
     return (
+        <motion.div 
+            initial ={{opacity: 0}}
+            animate = {{opacity: 1}}
+            exit = {{opacity: 0}}
+        >
         <Container fluid className="about-section">
             <Container>
                 <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -48,6 +60,8 @@ function About({CurrentTheme}){
         </Container>
 
         </Container>
+        </motion.div>
+
     );
 }
 

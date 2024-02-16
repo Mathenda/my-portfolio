@@ -11,6 +11,7 @@ html {
   ); */
 
   --imp-text-color: #9099AF;
+  --accent: var(--purple);
 }
 [data-theme='dark'] {
   --color-primary: #191d2b;
@@ -101,7 +102,15 @@ body {
   );
   transition: all 5s ease;
 }
-
+.privacy-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--accent);
+  z-index: 2;
+}
 
 .purple {
   color: var(--imp-text-color) !important;

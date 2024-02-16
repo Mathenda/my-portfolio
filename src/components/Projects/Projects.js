@@ -1,6 +1,8 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import academicWriters from "../../Assets/writers.jpg";
+import {motion} from "framer-motion";
+import {useLocation} from "react-router-dom";
 import quiz from "../../Assets/quiz.jpeg";
 import film from "../../Assets/film.png";
 import spotify from "../../Assets/spotify.png";
@@ -8,7 +10,17 @@ import spotify2 from "../../Assets/spotify2.png";
 import notes from "../../Assets/notes.png";
 import ProjectInfo from "./ProjectInfo";
 function Projects(){
+  const Location = useLocation();
+
+  useEffect(() =>{
+    window.scrollTo(0,0);
+  }, [Location]);
     return(
+      <motion.div
+        initial = {{opacity: 0}}
+        animate = {{ opacity: 1}}
+        exit = {{ opacity: 0}}
+      >
         <Container fluid className="project-section">
             <Container>
             <div className="stack-title">
@@ -89,6 +101,8 @@ function Projects(){
         </Row>
             </Container>
         </Container>
+      </motion.div>
+        
     );
 }
 

@@ -1,12 +1,23 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HomeInfo from "./HomeInfo";
-
+import {motion} from "framer-motion";
+import {useLocation} from "react-router-dom";
 import Type from "./Type";
 import MouseFadeInSection from "../MouseFadeInSection";
 function Home(){
+    const Location = useLocation();
+
+    useEffect (() =>{
+        window.scrollTo(0,0);
+    }, [Location]);
     return (
-        <section>
+        <motion.div
+            initial = {{opacity: 0}}
+            animate = {{ opacity: 1}}
+            exit = {{ opacity: 0}}
+        >
+            <section>
             <Container fluid className="home-section" id="home">
                 <Container className="home-content">
                 <Row>
@@ -39,6 +50,8 @@ function Home(){
 
             <HomeInfo defer/>
         </section>
+        </motion.div>
+        
     );
 }
 

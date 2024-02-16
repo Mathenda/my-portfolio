@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import { useLocation } from "react-router-dom";
+import {motion} from "framer-motion";
 import pdf from "../../Assets/../Assets/MathendaResume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -9,13 +11,18 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function Resume() {
   const [width, setWidth] = useState(1200);
-
+  const Location = useLocation();
   useEffect(() => {
     setWidth(window.innerWidth);
-  }, []);
+    window.scrollTo(0,0);
+  }, [Location]);
 
   return (
-    <div>
+    <motion.div
+      initial = {{opacity: 0}}
+      animate = {{ opacity: 1}}
+      exit = {{ opacity: 0}}
+    >
       <Container fluid className="resume-section">
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
@@ -50,7 +57,7 @@ function Resume() {
           </Button>
         </Row>
       </Container>
-    </div>
+    </motion.div>
   );
 }
 

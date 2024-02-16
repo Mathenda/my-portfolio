@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 import Resume from './components/Resume/Resume';
 import useLocalStorage from 'use-local-storage';
 import React, {useState, useEffect} from 'react';
+import { AnimatePresence } from 'framer-motion';
 import Preloader from  "../src/components/Pre";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -42,6 +43,7 @@ const switchTheme = () => {
             <Preloader load={load} />
     <div className="App" data-theme={theme}>
         <NavBar switchTheme={switchTheme} CurrentTheme={theme}/>
+        <AnimatePresence mode="wait">
         <Routes>
           <Route path = "/" element={<Home />} />
           <Route path = "/about" element={<About CurrentTheme={theme}/>} />
@@ -49,7 +51,9 @@ const switchTheme = () => {
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} /> 
         </Routes>
-        <Footer />
+        <Footer defer/>
+        </AnimatePresence>
+
     </div>
     </Router>
 
