@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.688f5042.css",
-    "main.js": "/my-portfolio/static/js/main.d7995090.js",
-    "static/js/404.43417078.chunk.js": "/my-portfolio/static/js/404.43417078.chunk.js",
+    "main.js": "/my-portfolio/static/js/main.321d2bc4.js",
+    "static/js/919.a3cc29b8.chunk.js": "/my-portfolio/static/js/919.a3cc29b8.chunk.js",
     "static/media/home-bg.jpg": "/my-portfolio/static/media/home-bg.4ed47eb58cf9ebc5ef94.jpg",
     "static/media/dark-home-bg.jpg": "/my-portfolio/static/media/dark-home-bg.aaa643f63318f620801b.jpg",
     "static/media/MathendaResume.pdf": "/my-portfolio/static/media/MathendaResume.a6b718f3d0514e4ca8a9.pdf",
@@ -12,11 +12,11 @@
     "static/media/pre.svg": "/my-portfolio/static/media/pre.b166e412f056d8b80a94.svg",
     "index.html": "/my-portfolio/index.html",
     "main.688f5042.css.map": "/my-portfolio/static/css/main.688f5042.css.map",
-    "main.d7995090.js.map": "/my-portfolio/static/js/main.d7995090.js.map",
-    "404.43417078.chunk.js.map": "/my-portfolio/static/js/404.43417078.chunk.js.map"
+    "main.321d2bc4.js.map": "/my-portfolio/static/js/main.321d2bc4.js.map",
+    "919.a3cc29b8.chunk.js.map": "/my-portfolio/static/js/919.a3cc29b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.688f5042.css",
-    "static/js/main.d7995090.js"
+    "static/js/main.321d2bc4.js"
   ]
 }
