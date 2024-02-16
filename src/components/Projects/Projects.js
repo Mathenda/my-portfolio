@@ -60,9 +60,9 @@ function Projects(){
               description="Digital Educational Resources & Research Capacity Building. Academic Writers™ is an educational institute that provides digital educational resources to students, teachers, academics, researchers, and other relevant entities involved in scholarly work with the sole purpose of advancing digital literacy and research capacity building. 
 
               "
-              ghLink="https://academicwriters.org.za"
+              // ghLink="https://academicwriters.org.za"
 
-              // demoLink="https://academicwriters.org.za"              
+              demoLink="https://academicwriters.org.za"              
             />
           </Col>
 
@@ -84,7 +84,7 @@ function Projects(){
               title="Movie recommender"
               description="Interactive web app that uses AI and machine learning to adjust based on your tastes and recommend movies you might enjoy"
               // ghLink="https://github.com/the1Don1"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+
             />
           </Col>
 
@@ -95,7 +95,6 @@ function Projects(){
               title="Spotify similarity calculator"
               description="Web app that uses the Spotify REST API to compare to spotify accounts and return a similarity score based on genre, playlist and listening patterns"
               // ghLink="https://github.com/the1Don1"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
         </Row>
