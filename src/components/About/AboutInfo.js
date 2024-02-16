@@ -16,30 +16,30 @@ function AboutInfo(){
                 Hi Everyone, I'm <span className="purple">Mathenda Maphasha </span>
                 from <span className="purple"> Pretoria, South africa.</span></Reveal>
                 <br />                <br></br>
-                <Reveal>I am a final year Computer science Student at the University Of Pretoria</Reveal>
+                <Reveal>I am a <span className="purple">final year Computer science Student</span> at the <span className="purple">University Of Pretoria</span></Reveal>
                 <br />
-                <Reveal>Apart from coding, some other activities that I love to do! </Reveal>
+                <Reveal><span className="purple">Apart from coding</span>, some other activities that I love to do! </Reveal>
               </p>
               <Reveal>
               <ul>
                 <li className="about-activity">
-                  <ImRadioUnchecked  /> Reading
+                <span className="purple"><ImRadioUnchecked  /> Reading</span>
                 </li>
                 <li className="about-activity">
-                  <ImRadioUnchecked  /> Photography
+                <span className="purple"><ImRadioUnchecked  /> Photography</span>
                 </li>
                 <li className="about-activity">
-                  <ImRadioUnchecked  /> Travelling
+                <span className="purple"><ImRadioUnchecked  /> Travelling</span>
                 </li>
               </ul>
               </Reveal>
-              <MouseFadeInSection>
+              <span className="purple"><MouseFadeInSection>
                 <div className="scroll-downs">
                   <div className="mousey">
                   <div className="scroller"></div>
                   </div>
                 </div>
-                </MouseFadeInSection>
+                </MouseFadeInSection></span>
               <p style={{ color: "var(--color-purple-3)" }}>
                 "Progress is man's ability to complicate simplicity."{" "}
               </p>

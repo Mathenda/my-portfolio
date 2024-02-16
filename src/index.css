@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
   --background-image: linear-gradient(360deg, rgb(0, 125, 145), rgb(6 140 163));
 }
 [data-theme='dark'] {
@@ -11,7 +12,15 @@ body {
   font-family: "Roboto", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: var(--background-image);
+  background: linear-gradient(-45deg, #6a6978, #2c2f50, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+
+  /* background-image: var(--background-image) !important; */
+
+
   /* transition: background-image 5s ease; */
   /* background-color: rgb(11 53 65); */
 }
@@ -21,7 +30,49 @@ body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: var(--background-image) !important;
+  background: linear-gradient(-45deg, #54566a, #01092c, #2c2f50, #01082d);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+
+  /* background-image: var(--background-image) !important; */
   /* transition: background-image 5s ease; */
   /* background-color: rgb(11 53 65); */
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@-moz-keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
 }

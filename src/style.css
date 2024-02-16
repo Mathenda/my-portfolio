@@ -36,6 +36,11 @@ html {
   --github-color-3: #7ac7c4;
   --github-color-4: #f73859;
   --github-color-5: #384259;
+
+  --background-color-1: rgb(0, 8, 44);
+  --background-color-2: rgb(0, 19, 51);
+  --background-color-3: rgb(5, 29, 71);
+  --background-color-4: rgb(5, 38, 94);
   --bg-image: url('./Assets/dark-home-bg.jpg');
   /* background-image: linear-gradient(360deg, rgb(11 53 65), rgb(0 0 0)); */
 
@@ -76,6 +81,10 @@ body {
   --github-color-3: #7DB9B6;
   --github-color-4: #F5E9CF;
   --github-color-5: #E96479;
+  --background-color-1: rgb(0, 125, 145);
+  --background-color-2: rgb(6, 140, 163);
+  --background-color-3: rgb(10, 124, 145);
+  --background-color-4: rgb(12, 68, 80);
   --bg-image: url('./Assets/home-bg.jpg');
   /* --color-purple-6: #12181b; */
   --br-sm-2: 14px;
@@ -816,7 +825,11 @@ position: relative;
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background: linear-gradient(-45deg, var(--background-color-1), var(--background-color-2), var(--background-color-3), var(--background-color-4)) ;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
   transition: all 0.4s ease-in-out;
 
 }
@@ -917,9 +930,49 @@ position: relative;
   position: relative !important;
   padding-top: 90px !important;
   padding-bottom: 0px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
+  background: linear-gradient(-180deg, #54566a, #01092c, #2c2f50, #01082d) !important;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
   color: white !important;
   transition: all 0.4s ease-in-out;
+}
+}
+@-webkit-keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@-moz-keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@keyframes Gradient {
+  0% {
+  background-position: 0% 50%
+  }
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
 }
 }
 .about-section {
@@ -927,9 +980,14 @@ position: relative;
   position: relative !important;
   padding-top: 150px;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
+  background: linear-gradient(-45deg, var(--background-color-1), var(--background-color-2), var(--background-color-3), var(--background-color-4)) ;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
   color: white !important;
-  transition: all 0.4s ease-in-out;
+  /* transition: color 0.4s ease-in-out; */
 
 }
 
