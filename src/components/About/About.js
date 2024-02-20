@@ -16,6 +16,7 @@ function About({CurrentTheme}){
         window.scrollTo(0, 0);
     }, [Location]);
     return (
+
         <motion.div 
             initial ={{opacity: 0}}
             animate = {{opacity: 1}}

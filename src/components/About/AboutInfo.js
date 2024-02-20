@@ -1,12 +1,13 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import { ImRadioUnchecked } from "react-icons/im";
 import MouseFadeInSection from "../MouseFadeInSection";
 import {Reveal} from "../Reveal";
 
 function AboutInfo(){
+
+
     return (
-      
         <Card className="quote-card-view">
           <Card.Body>
 

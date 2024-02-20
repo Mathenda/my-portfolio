@@ -88,16 +88,16 @@ function NavBar({switchTheme, CurrentTheme}) {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item  className = "Dark-Toggle">
-        <Toggle
-        className="my-toggle"
-            onChange={switchTheme}
-            checked={CurrentTheme === 'dark'}
-            icons={{
-              checked: "🌑",
-              unchecked: "☀️",
-            }}
-            aria-label="Dark mode toggle"
-        />
+            <Toggle
+            className="my-toggle"
+                onChange={switchTheme}
+                checked={CurrentTheme === 'dark'}
+                icons={{
+                  checked: "🌑",
+                  unchecked: "☀️",
+                }}
+                aria-label="Dark mode toggle"
+            />
         </Nav.Item>
         </Nav>
 

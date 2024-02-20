@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import FadeInSection from "../FadeInSection";
 import { FaDiscord, FaWhatsapp } from "react-icons/fa";
 import {Reveal} from "../Reveal";
+
 import {
     AiFillGithub,
     AiOutlineTwitter,
@@ -15,6 +16,7 @@ import {
   function HomeInfo(props){
     const [hover, setHover] = useState(false);
     return (
+
         <Container fluid className="home-about-section" id="about">
         <Container>
       <FadeInSection>
@@ -157,6 +159,7 @@ import {
           </Row>
         </Container>
       </Container>
+
     );
   }
 

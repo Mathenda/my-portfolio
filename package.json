@@ -10,6 +10,7 @@
     "@babel/plugin-transform-class-properties": "^7.23.3",
     "@babel/plugin-transform-class-static-block": "^7.23.4",
     "@csstools/postcss-is-pseudo-class": "^4.0.4",
+    "@johnn-e/react-mesh-gradient": "^1.1.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -38,7 +39,6 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://The1Don1.github.io/my-portfolio/",
-
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",

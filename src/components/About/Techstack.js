@@ -11,6 +11,8 @@ import {
   DiPython,
   DiGit,
   DiJava,
+  DIReact,
+  DiReact
 } from "react-icons/di";
 import {
   SiRedis,
@@ -189,7 +191,7 @@ function Techstack() {
         </motion.div>
 
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Assembly">
+      <Col xs={4} md={2} className="tech-icons" title="React">
               <motion.div
           initial="hidden"
           whileInView={"visible"}
@@ -205,7 +207,7 @@ function Techstack() {
             },
             hidden: { opacity: 1, y: 80 },
           }}>
-        <SiAssemblyscript  />
+        <DiReact  />
         </motion.div>
 
       </Col>
