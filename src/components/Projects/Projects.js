@@ -82,8 +82,8 @@ function Projects(){
               imgPath={film}
               isBlog={false}
               title="Movie recommender"
-              description="Interactive web app that uses AI and machine learning to adjust based on your tastes and recommend movies you might enjoy"
-              // ghLink="https://github.com/the1Don1"
+              description="Interactive python script that uses machine learning to adjust based on your tastes and recommend movies you might enjoy"
+              ghLink="https://github.com/the1Don1/python-movie-recommender"
 
             />
           </Col>
