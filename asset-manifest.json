@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.dad1c222.css",
-    "main.js": "/my-portfolio/static/js/main.18273852.js",
+    "main.css": "/my-portfolio/static/css/main.7e0c8f75.css",
+    "main.js": "/my-portfolio/static/js/main.e75cf0b9.js",
     "static/js/919.a3cc29b8.chunk.js": "/my-portfolio/static/js/919.a3cc29b8.chunk.js",
     "static/media/home-bg.jpg": "/my-portfolio/static/media/home-bg.4ed47eb58cf9ebc5ef94.jpg",
     "static/media/dark-home-bg.jpg": "/my-portfolio/static/media/dark-home-bg.aaa643f63318f620801b.jpg",
-    "static/media/MathendaResume.pdf": "/my-portfolio/static/media/MathendaResume.a6b718f3d0514e4ca8a9.pdf",
+    "static/media/MathendaResume.pdf": "/my-portfolio/static/media/MathendaResume.6189095e3df899242cb5.pdf",
     "static/media/quiz.jpeg": "/my-portfolio/static/media/quiz.f7b0d4e0cd1219f07dc7.jpeg",
     "static/media/logo.png": "/my-portfolio/static/media/logo.841ab507501e46653a73.png",
     "static/media/writers.jpg": "/my-portfolio/static/media/writers.bc665bef332b0e509d84.jpg",
     "static/media/pre.svg": "/my-portfolio/static/media/pre.b166e412f056d8b80a94.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.dad1c222.css.map": "/my-portfolio/static/css/main.dad1c222.css.map",
-    "main.18273852.js.map": "/my-portfolio/static/js/main.18273852.js.map",
+    "main.7e0c8f75.css.map": "/my-portfolio/static/css/main.7e0c8f75.css.map",
+    "main.e75cf0b9.js.map": "/my-portfolio/static/js/main.e75cf0b9.js.map",
     "919.a3cc29b8.chunk.js.map": "/my-portfolio/static/js/919.a3cc29b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dad1c222.css",
-    "static/js/main.18273852.js"
+    "static/css/main.7e0c8f75.css",
+    "static/js/main.e75cf0b9.js"
   ]
 }
