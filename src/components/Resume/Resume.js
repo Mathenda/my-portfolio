@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useLocation } from "react-router-dom";
 import {motion} from "framer-motion";
-import pdf from "../../Assets/../Assets/MathendaResume.pdf";
+import pdf from "../../Assets/MathendaResume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -38,9 +38,20 @@ function Resume() {
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page style="A4" pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-            
-            <Page wrap={false} style={"A4"} pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+            {/* <Col xs={6}> */}
+            <Page className = "pdf-page" style="A4" pageNumber={1} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} />
+            {/* </Col> */}
+            {/* <Col xs={6}> */}
+
+            {/* </Col> */}
+          </Document>
+          <Document file={pdf} className="d-flex justify-content-center">
+            {/* <Col xs={6}> */}
+            <Page className = "pdf-page" wrap={true} style={"A4"} pageNumber={2} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false}/>
+            {/* </Col> */}
+            {/* <Col xs={6}> */}
+
+            {/* </Col> */}
           </Document>
           
         </Row>

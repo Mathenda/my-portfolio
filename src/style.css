@@ -185,6 +185,8 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
+  max-width: 100% !important;
+  overflow-x:auto !important;
 }
 
 .navbar {
@@ -192,6 +194,8 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  max-width: 100% !important;
+  overflow-x:auto !important;
 }
 
 .navbar-toggler {
@@ -248,8 +252,8 @@ button:focus {
 
 @media (max-width: 767px) {
   .navbar {
-    /* padding: 1rem 2rem !important; */
-    /* height: 7% !important; */
+    padding: 0.0rem 0.1rem !important;
+    /* height: 13%; */
     font-size: 1.4rem !important;
     background-color: transparent !important;
     backdrop-filter: blur(15px) !important;
@@ -1219,15 +1223,27 @@ background-position: 0% 50%
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: transparent !important;
 }
+
 
 .resume {
   padding-top: 50px;
   padding-bottom: 50px;
   justify-content: center;
+  color: transparent !important;
+  background-color: transparent !important;
 }
 
+/* .pdf-wrap{
+  width: 100%;
+} */
+
+/* @media(max-width: 768px){
+  .resume {
+    flex-direction: column !important;
+  }
+} */
 .resume-left {
   padding-right: 80px !important;
 }
