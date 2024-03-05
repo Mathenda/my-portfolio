@@ -23,7 +23,7 @@ This project was built and inspired by [soumyajit4419](https://github.com/soumya
 From the command clone this repository using:
 ```bash
 #cloning my-portfolio
-$ git clone https://github.com/The1Don1/my-portfolio.git
+$ git clone https://github.com/Mathenda/my-portfolio.git
 
 #move into root
 $cd my-portfolio

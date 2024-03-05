@@ -22,7 +22,7 @@ function Github({GithubTheme}) {
         Days I <strong className="purple">Code</strong>
       </h1> */}
       {/* <GitHubCalendar
-        username="The1Don1"
+        username="Mathenda"
         blockSize={15}
         blockMargin={7}
         // theme = "dark"
@@ -30,7 +30,7 @@ function Github({GithubTheme}) {
         fontSize={16}
       /> */}
       <GitHubCalendar style={{justifyContent: "right"}}
-        username="The1Don1"
+        username="Mathenda"
         blockSize={14}
         blockRadius={7}
         blockMargin={5}

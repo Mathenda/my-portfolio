@@ -99,7 +99,7 @@ import {
                 </li>
                 <li className="social-icons">
                   <a
-                    // href="https://github.com/The1Don1"
+                    // href="https://github.com/Mathenda"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour home-social-icons"
@@ -136,7 +136,7 @@ import {
                 </li>
                 <li className="social-icons">
                   <a
-                    href="https://github.com/The1Don1"
+                    href="https://github.com/Mathenda"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
