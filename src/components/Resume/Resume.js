@@ -15,7 +15,35 @@ function Resume() {
   useEffect(() => {
     setWidth(window.innerWidth);
     window.scrollTo(0,0);
+  }, [Location]);
 
+  return (
+    <motion.div
+      initial = {{opacity: 0}}
+      animate = {{ opacity: 1}}
+      exit = {{ opacity: 0}}
+    >
+      <Container fluid className="resume-section">
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href={pdf}
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+        </Row>
+
+        <Row className="resume">
+          <Document file={pdf} className="d-flex justify-content-center">
+            {/* <Col xs={6}> */}
+            <Page className = "pdf-page" style="A4" pageNumber={1} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} />
+            {/* </Col> */}
+            {/* <Col xs={6}> */}
+
+            {/* </Col> */}
           </Document>
           <Document file={pdf} className="d-flex justify-content-center">
             {/* <Col xs={6}> */}
