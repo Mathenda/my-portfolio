@@ -38,7 +38,7 @@ function Projects(){
               title="Photographers Portfolio"
               description="A commisioned web site for a photographer to showcase their work and allow clients to book sessions. The site is built using pureJS, HTML and CSS. It has features which allows user to book sessions, view gallery, and contact the photographer."
               ghLink="https://github.com/the1Don1\static-portfolio-2"
-              demoLink="https://static-portfolio-2-three.vercel.app"
+              demoLink="https://okysxoops-portfolio.vercel.app"
               showGhButton={true}
             />
           </Col>
