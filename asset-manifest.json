@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.4b86a86c.css",
-    "main.js": "/my-portfolio/static/js/main.7f995cf5.js",
+    "main.css": "/my-portfolio/static/css/main.3bb39b2b.css",
+    "main.js": "/my-portfolio/static/js/main.4dc871d5.js",
     "static/js/919.a3cc29b8.chunk.js": "/my-portfolio/static/js/919.a3cc29b8.chunk.js",
     "static/media/portfolio-screenie.png": "/my-portfolio/static/media/portfolio-screenie.f9d4163db8cb0e88bfe8.png",
     "static/media/home-bg.jpg": "/my-portfolio/static/media/home-bg.4ed47eb58cf9ebc5ef94.jpg",
     "static/media/dark-home-bg.jpg": "/my-portfolio/static/media/dark-home-bg.aaa643f63318f620801b.jpg",
-    "static/media/MathendaResume.pdf": "/my-portfolio/static/media/MathendaResume.6189095e3df899242cb5.pdf",
+    "static/media/MathendaResume.pdf": "/my-portfolio/static/media/MathendaResume.3f5013e64e4d6a9ae724.pdf",
     "static/media/quiz.jpeg": "/my-portfolio/static/media/quiz.f7b0d4e0cd1219f07dc7.jpeg",
     "static/media/logo.png": "/my-portfolio/static/media/logo.841ab507501e46653a73.png",
     "static/media/writers.jpg": "/my-portfolio/static/media/writers.bc665bef332b0e509d84.jpg",
-    "static/media/pre.svg": "/my-portfolio/static/media/pre.b166e412f056d8b80a94.svg",
+    "static/media/pre.svg": "/my-portfolio/static/media/pre.1d62c42313c7d5a86dd4.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.4b86a86c.css.map": "/my-portfolio/static/css/main.4b86a86c.css.map",
-    "main.7f995cf5.js.map": "/my-portfolio/static/js/main.7f995cf5.js.map",
+    "main.3bb39b2b.css.map": "/my-portfolio/static/css/main.3bb39b2b.css.map",
+    "main.4dc871d5.js.map": "/my-portfolio/static/js/main.4dc871d5.js.map",
     "919.a3cc29b8.chunk.js.map": "/my-portfolio/static/js/919.a3cc29b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b86a86c.css",
-    "static/js/main.7f995cf5.js"
+    "static/css/main.3bb39b2b.css",
+    "static/js/main.4dc871d5.js"
   ]
 }
